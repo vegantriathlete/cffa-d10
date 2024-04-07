@@ -6,7 +6,7 @@ services:
         env_file:
             - ./secrets.env
         networks:
-            - mytesting
+            - cffanetwork
         volumes:
             - type: volume
               source: pgdata
@@ -22,7 +22,7 @@ services:
         env_file:
             - ./secrets.env
         networks:
-            - mytesting
+            - cffanetwork
         ports:
             - 9000:9000
         volumes:
@@ -41,7 +41,7 @@ services:
         env_file:
             - ./secrets.env
         networks:
-            - mytesting
+            - cffanetwork
         ports:
             - 80:80
         volumes:
@@ -54,9 +54,9 @@ services:
         image: nginx:stable-alpine3.17-slim
 
 networks:
-    mytesting:
+    cffanetwork:
         external: true
-        name: mytesting
+        name: cffanetwork
 
 volumes:
     pgdata:
