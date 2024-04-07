@@ -1,0 +1,19 @@
+uuid: 6cddcb05-5572-4129-986f-09efb3b2b67e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.grant_application
+  module:
+    - user
+id: node.grant_application.default
+targetEntityType: node
+bundle: grant_application
+mode: default
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

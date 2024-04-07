@@ -1,0 +1,19 @@
+uuid: 763f0f99-9cbc-4da6-96c5-96ffd208c4b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_amount_paid_to_publish
+    - paragraphs.paragraphs_type.book_information
+id: paragraph.book_information.field_amount_paid_to_publish
+field_name: field_amount_paid_to_publish
+entity_type: paragraph
+bundle: book_information
+label: 'How much did you pay the publisher?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

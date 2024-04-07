@@ -1,0 +1,10 @@
+uuid: 71cc589a-f426-4ac6-a938-7a6fb87299f1
+langcode: en
+status: true
+dependencies: {  }
+id: vehicle_information
+label: 'Vehicle Information'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

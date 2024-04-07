@@ -1,0 +1,39 @@
+uuid: 3d7e7936-f2f6-42f1-937f-af6ae3bb2a6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bank_information.field_bank_web_address
+    - field.field.paragraph.bank_information.field_last_statement_amount
+    - field.field.paragraph.bank_information.field_type_of_account
+    - paragraphs.paragraphs_type.bank_information
+id: paragraph.bank_information.default
+targetEntityType: paragraph
+bundle: bank_information
+mode: default
+content:
+  field_bank_web_address:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_last_statement_amount:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_type_of_account:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,75 @@
+uuid: cbadbd9f-1e33-4282-a381-31097963d3e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.book_information.field_amount_paid_to_publish
+    - field.field.paragraph.book_information.field_book_name
+    - field.field.paragraph.book_information.field_did_you_receive_an_advance
+    - field.field.paragraph.book_information.field_how_much_of_an_advance_did
+    - field.field.paragraph.book_information.field_published_year
+    - field.field.paragraph.book_information.field_publisher
+    - field.field.paragraph.book_information.field_was_your_book_self_publish
+    - paragraphs.paragraphs_type.book_information
+id: paragraph.book_information.default
+targetEntityType: paragraph
+bundle: book_information
+mode: default
+content:
+  field_amount_paid_to_publish:
+    type: string_textfield
+    weight: 6
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_book_name:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_did_you_receive_an_advance:
+    type: boolean_checkbox
+    weight: 3
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_how_much_of_an_advance_did:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_published_year:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_publisher:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_was_your_book_self_publish:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

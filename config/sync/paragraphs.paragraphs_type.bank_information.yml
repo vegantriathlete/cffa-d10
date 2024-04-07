@@ -1,0 +1,10 @@
+uuid: 2c2d9d99-7c4a-44d7-9890-acc3641c012e
+langcode: en
+status: true
+dependencies: {  }
+id: bank_information
+label: 'Bank Information'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

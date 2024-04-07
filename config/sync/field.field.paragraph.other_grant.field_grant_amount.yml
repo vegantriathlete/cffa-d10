@@ -1,0 +1,19 @@
+uuid: 2d38a99e-9e5d-455d-92b8-ccfc4b965110
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_grant_amount
+    - paragraphs.paragraphs_type.other_grant
+id: paragraph.other_grant.field_grant_amount
+field_name: field_grant_amount
+entity_type: paragraph
+bundle: other_grant
+label: 'Grant Amount'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

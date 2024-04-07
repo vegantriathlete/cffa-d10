@@ -1,0 +1,20 @@
+uuid: 50725f12-4386-4a2c-ad08-8119eb8cd0b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.grant_application
+  module:
+    - user
+id: node.grant_application.teaser
+targetEntityType: node
+bundle: grant_application
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

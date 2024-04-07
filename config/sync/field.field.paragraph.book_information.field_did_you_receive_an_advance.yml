@@ -1,0 +1,21 @@
+uuid: fd0cc223-b162-4b9a-a26b-8c7dfbcf184b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_did_you_receive_an_advance
+    - paragraphs.paragraphs_type.book_information
+id: paragraph.book_information.field_did_you_receive_an_advance
+field_name: field_did_you_receive_an_advance
+entity_type: paragraph
+bundle: book_information
+label: 'Did you receive an advance from the publisher?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

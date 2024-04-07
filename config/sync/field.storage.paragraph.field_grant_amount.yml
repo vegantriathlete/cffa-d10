@@ -1,0 +1,21 @@
+uuid: 770ee025-df1f-4227-b252-c5871aea7b65
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_grant_amount
+field_name: field_grant_amount
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

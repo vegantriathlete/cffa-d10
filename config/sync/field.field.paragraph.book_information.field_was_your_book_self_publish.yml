@@ -1,0 +1,21 @@
+uuid: a7db460c-8761-484c-aaa2-5c3c84a2c134
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_was_your_book_self_publish
+    - paragraphs.paragraphs_type.book_information
+id: paragraph.book_information.field_was_your_book_self_publish
+field_name: field_was_your_book_self_publish
+entity_type: paragraph
+bundle: book_information
+label: 'Was your book self-published?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'Yes'
+  off_label: 'No'
+field_type: boolean

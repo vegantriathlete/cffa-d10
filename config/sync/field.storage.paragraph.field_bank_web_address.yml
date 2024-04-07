@@ -1,0 +1,21 @@
+uuid: a0d4e9d6-94bc-4956-91c9-b7d891d01a7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_bank_web_address
+field_name: field_bank_web_address
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

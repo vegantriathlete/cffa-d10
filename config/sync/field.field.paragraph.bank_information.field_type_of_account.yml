@@ -1,0 +1,19 @@
+uuid: 5184610d-7f66-4b5e-86c3-6eec60bc57d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_type_of_account
+    - paragraphs.paragraphs_type.bank_information
+id: paragraph.bank_information.field_type_of_account
+field_name: field_type_of_account
+entity_type: paragraph
+bundle: bank_information
+label: 'Bank Name and Type of Account'
+description: 'Type of account could be checking, savings, money market, etc.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

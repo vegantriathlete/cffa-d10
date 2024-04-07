@@ -1,0 +1,29 @@
+uuid: 7b7af9db-4f18-4621-90f9-2a5eba020760
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.discussion.field_comment_author
+    - field.field.paragraph.discussion.field_comments
+    - paragraphs.paragraphs_type.discussion
+id: paragraph.discussion.default
+targetEntityType: paragraph
+bundle: discussion
+mode: default
+content:
+  field_comment_author:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_comments:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

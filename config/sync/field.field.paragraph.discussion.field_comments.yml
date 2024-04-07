@@ -1,0 +1,19 @@
+uuid: ed719fa3-cfe5-40a5-8c1b-10e340fa95cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_comments
+    - paragraphs.paragraphs_type.discussion
+id: paragraph.discussion.field_comments
+field_name: field_comments
+entity_type: paragraph
+bundle: discussion
+label: Comments
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

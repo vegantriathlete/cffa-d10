@@ -6,9 +6,10 @@ name: 'Carnegie Fund for Authors'
 mail: carnegiefundforauthors@gmail.com
 slogan: ''
 page:
-  403: ''
+  403: /node/5
   404: ''
-  front: /node
+  front: /node/1
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
+mail_notification: ''

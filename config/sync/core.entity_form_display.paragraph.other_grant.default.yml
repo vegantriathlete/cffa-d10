@@ -1,0 +1,41 @@
+uuid: 2402f425-8255-4c7c-b683-f2eb5085d227
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.other_grant.field_grant_amount
+    - field.field.paragraph.other_grant.field_grant_organization
+    - field.field.paragraph.other_grant.field_year_grant_received
+    - paragraphs.paragraphs_type.other_grant
+id: paragraph.other_grant.default
+targetEntityType: paragraph
+bundle: other_grant
+mode: default
+content:
+  field_grant_amount:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_grant_organization:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_year_grant_received:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,10 @@
+uuid: 4c744472-ad76-4b84-936c-e559c85f59f5
+langcode: en
+status: true
+dependencies: {  }
+id: book_information
+label: 'Book Information'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

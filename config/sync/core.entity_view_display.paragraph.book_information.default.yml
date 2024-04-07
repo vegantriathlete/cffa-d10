@@ -1,0 +1,79 @@
+uuid: d09de961-1543-4337-b734-954280cb6897
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.book_information.field_amount_paid_to_publish
+    - field.field.paragraph.book_information.field_book_name
+    - field.field.paragraph.book_information.field_did_you_receive_an_advance
+    - field.field.paragraph.book_information.field_how_much_of_an_advance_did
+    - field.field.paragraph.book_information.field_published_year
+    - field.field.paragraph.book_information.field_publisher
+    - field.field.paragraph.book_information.field_was_your_book_self_publish
+    - paragraphs.paragraphs_type.book_information
+id: paragraph.book_information.default
+targetEntityType: paragraph
+bundle: book_information
+mode: default
+content:
+  field_amount_paid_to_publish:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_book_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_did_you_receive_an_advance:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_how_much_of_an_advance_did:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_published_year:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_publisher:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_was_your_book_self_publish:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden: {  }

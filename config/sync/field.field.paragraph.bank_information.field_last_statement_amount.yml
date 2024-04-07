@@ -1,0 +1,19 @@
+uuid: f0e34a95-eeb3-47e6-a79c-362f396387d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_last_statement_amount
+    - paragraphs.paragraphs_type.bank_information
+id: paragraph.bank_information.field_last_statement_amount
+field_name: field_last_statement_amount
+entity_type: paragraph
+bundle: bank_information
+label: 'Last Statement Amount'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 29e4c567-1992-4af0-94b0-25f8011e5f31
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_comment_author
+    - paragraphs.paragraphs_type.discussion
+id: paragraph.discussion.field_comment_author
+field_name: field_comment_author
+entity_type: paragraph
+bundle: discussion
+label: By
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

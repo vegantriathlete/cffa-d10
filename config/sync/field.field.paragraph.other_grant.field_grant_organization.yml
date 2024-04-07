@@ -1,0 +1,19 @@
+uuid: 05a83c65-ccb2-45fb-9df2-79c48bc9fdb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_grant_organization
+    - paragraphs.paragraphs_type.other_grant
+id: paragraph.other_grant.field_grant_organization
+field_name: field_grant_organization
+entity_type: paragraph
+bundle: other_grant
+label: 'Grant Organization'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

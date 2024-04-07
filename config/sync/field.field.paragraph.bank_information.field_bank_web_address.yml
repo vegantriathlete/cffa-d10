@@ -1,0 +1,19 @@
+uuid: d7707e7f-646f-40f2-aed2-42b559c02ba2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_bank_web_address
+    - paragraphs.paragraphs_type.bank_information
+id: paragraph.bank_information.field_bank_web_address
+field_name: field_bank_web_address
+entity_type: paragraph
+bundle: bank_information
+label: "Your Bank's Web Address"
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

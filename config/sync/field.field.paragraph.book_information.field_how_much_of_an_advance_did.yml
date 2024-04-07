@@ -1,0 +1,19 @@
+uuid: 4834011b-e395-43bf-b76e-1e01956dc146
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_how_much_of_an_advance_did
+    - paragraphs.paragraphs_type.book_information
+id: paragraph.book_information.field_how_much_of_an_advance_did
+field_name: field_how_much_of_an_advance_did
+entity_type: paragraph
+bundle: book_information
+label: 'Amount of the advance'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

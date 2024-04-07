@@ -1,0 +1,18 @@
+uuid: d8210966-c83a-4166-8df1-5ae920dab4a3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Grant Application'
+type: grant_application
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false
