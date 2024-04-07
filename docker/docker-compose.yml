@@ -1,0 +1,64 @@
+name: cffa
+
+services:
+    postgres:
+        container_name: postgres-server
+        env_file:
+            - ./secrets.env
+        networks:
+            - mytesting
+        volumes:
+            - type: volume
+              source: pgdata
+              target: /var/lib/postgresql/data
+            - type: bind
+              source: /Sites/cffa
+              target: /Sites/cffa
+        ports:
+            - 5432:5432
+        image: postgres:alpine3.19
+    php-fpm:
+        container_name: php-fpm-server
+        env_file:
+            - ./secrets.env
+        networks:
+            - mytesting
+        ports:
+            - 9000:9000
+        volumes:
+            - type: bind
+              source: /Sites/cffa
+              target: /Sites/cffa
+            - type: bind
+              source: /Sites/cffa/docker/php-fpm/cffa-php.ini
+              target: /usr/local/etc/php/conf.d/cffa-php.ini
+        image: php-fpm:v1.0_20240330
+    nginx:
+        container_name: nginx-server
+        depends_on:
+          - php-fpm
+          - postgres
+        env_file:
+            - ./secrets.env
+        networks:
+            - mytesting
+        ports:
+            - 80:80
+        volumes:
+            - type: bind
+              source: /Sites/cffa
+              target: /Sites/cffa
+            - type: bind
+              source: /Sites/cffa/docker/nginx/nginx-cffa-drupal.conf
+              target: /etc/nginx/conf.d/nginx-cffa-drupal.conf
+        image: nginx:stable-alpine3.17-slim
+
+networks:
+    mytesting:
+        external: true
+        name: mytesting
+
+volumes:
+    pgdata:
+        external: true
+        name: pgdata
