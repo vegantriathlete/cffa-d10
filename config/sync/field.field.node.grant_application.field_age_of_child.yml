@@ -1,0 +1,19 @@
+uuid: f9cd622e-620d-4703-8cfb-22a24643a846
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_age_of_child
+    - node.type.grant_application
+id: node.grant_application.field_age_of_child
+field_name: field_age_of_child
+entity_type: node
+bundle: grant_application
+label: Children
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

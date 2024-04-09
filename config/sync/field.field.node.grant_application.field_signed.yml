@@ -1,0 +1,21 @@
+uuid: 311c78ea-9e51-4bb3-b898-e8fc5f65c86c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_signed
+    - node.type.grant_application
+  module:
+    - datetime
+id: node.grant_application.field_signed
+field_name: field_signed
+entity_type: node
+bundle: grant_application
+label: 'Date Signed'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

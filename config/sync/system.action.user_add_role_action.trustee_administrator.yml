@@ -1,0 +1,14 @@
+uuid: 56792444-1fef-4782-94f4-c450023df199
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.trustee_administrator
+  module:
+    - user
+id: user_add_role_action.trustee_administrator
+label: 'Add the Trustee Administrator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: trustee_administrator

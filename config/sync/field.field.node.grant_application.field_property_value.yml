@@ -1,0 +1,19 @@
+uuid: d827642f-5f8a-42ec-a11a-f77d9ca0bd6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_property_value
+    - node.type.grant_application
+id: node.grant_application.field_property_value
+field_name: field_property_value
+entity_type: node
+bundle: grant_application
+label: 'Property value'
+description: "List the name and tax assessment value for each piece of property you own. If you do not own any property, enter \"none.\"<br>\r\nYou must specify this prior to submitting your application."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

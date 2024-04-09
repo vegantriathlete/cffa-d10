@@ -1,0 +1,19 @@
+uuid: f561d7e8-e8b2-4c86-b0e0-5e39ae074be3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_signature
+    - node.type.grant_application
+id: node.grant_application.field_signature
+field_name: field_signature
+entity_type: node
+bundle: grant_application
+label: Signature
+description: "Please type your full name into the box to state you agree with these terms. I attest that all of the information I have provided is correct to the best of my knowledge. I understand that if I have misrepresented any of this information I will automatically be disqualified from receiving this or future grants from the Carnegie Fund for Authors.<br>\r\nYou must specify this prior to submitting your application."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

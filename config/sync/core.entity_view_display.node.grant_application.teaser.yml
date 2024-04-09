@@ -4,6 +4,32 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.grant_application.field_age_of_child
+    - field.field.node.grant_application.field_amount_awarded
+    - field.field.node.grant_application.field_bank_information
+    - field.field.node.grant_application.field_birth_date
+    - field.field.node.grant_application.field_book_information
+    - field.field.node.grant_application.field_current_writing_status
+    - field.field.node.grant_application.field_discussion
+    - field.field.node.grant_application.field_employer
+    - field.field.node.grant_application.field_employment_status
+    - field.field.node.grant_application.field_family_status
+    - field.field.node.grant_application.field_grantee_income
+    - field.field.node.grant_application.field_insurance_company
+    - field.field.node.grant_application.field_investments
+    - field.field.node.grant_application.field_life_insurance
+    - field.field.node.grant_application.field_nom_de_plume
+    - field.field.node.grant_application.field_other_grant
+    - field.field.node.grant_application.field_other_income_source
+    - field.field.node.grant_application.field_partner_income
+    - field.field.node.grant_application.field_partner_name
+    - field.field.node.grant_application.field_property_value
+    - field.field.node.grant_application.field_reason_applying
+    - field.field.node.grant_application.field_signature
+    - field.field.node.grant_application.field_signed
+    - field.field.node.grant_application.field_submitted
+    - field.field.node.grant_application.field_supporting_documents
+    - field.field.node.grant_application.field_vehicle_information
     - node.type.grant_application
   module:
     - user
@@ -17,4 +43,30 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
-hidden: {  }
+hidden:
+  field_age_of_child: true
+  field_amount_awarded: true
+  field_bank_information: true
+  field_birth_date: true
+  field_book_information: true
+  field_current_writing_status: true
+  field_discussion: true
+  field_employer: true
+  field_employment_status: true
+  field_family_status: true
+  field_grantee_income: true
+  field_insurance_company: true
+  field_investments: true
+  field_life_insurance: true
+  field_nom_de_plume: true
+  field_other_grant: true
+  field_other_income_source: true
+  field_partner_income: true
+  field_partner_name: true
+  field_property_value: true
+  field_reason_applying: true
+  field_signature: true
+  field_signed: true
+  field_submitted: true
+  field_supporting_documents: true
+  field_vehicle_information: true

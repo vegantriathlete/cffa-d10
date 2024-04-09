@@ -1,0 +1,21 @@
+uuid: f63d3bfc-0382-4235-9d8b-4c3e8c6d0866
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_birth_date
+    - node.type.grant_application
+  module:
+    - datetime
+id: node.grant_application.field_birth_date
+field_name: field_birth_date
+entity_type: node
+bundle: grant_application
+label: 'Birth Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -3,17 +3,237 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.grant_application.field_age_of_child
+    - field.field.node.grant_application.field_amount_awarded
+    - field.field.node.grant_application.field_bank_information
+    - field.field.node.grant_application.field_birth_date
+    - field.field.node.grant_application.field_book_information
+    - field.field.node.grant_application.field_current_writing_status
+    - field.field.node.grant_application.field_discussion
+    - field.field.node.grant_application.field_employer
+    - field.field.node.grant_application.field_employment_status
+    - field.field.node.grant_application.field_family_status
+    - field.field.node.grant_application.field_grantee_income
+    - field.field.node.grant_application.field_insurance_company
+    - field.field.node.grant_application.field_investments
+    - field.field.node.grant_application.field_life_insurance
+    - field.field.node.grant_application.field_nom_de_plume
+    - field.field.node.grant_application.field_other_grant
+    - field.field.node.grant_application.field_other_income_source
+    - field.field.node.grant_application.field_partner_income
+    - field.field.node.grant_application.field_partner_name
+    - field.field.node.grant_application.field_property_value
+    - field.field.node.grant_application.field_reason_applying
+    - field.field.node.grant_application.field_signature
+    - field.field.node.grant_application.field_signed
+    - field.field.node.grant_application.field_submitted
+    - field.field.node.grant_application.field_supporting_documents
+    - field.field.node.grant_application.field_vehicle_information
     - node.type.grant_application
   module:
+    - datetime
+    - entity_reference_revisions
+    - file
+    - options
     - user
 id: node.grant_application.default
 targetEntityType: node
 bundle: grant_application
 mode: default
 content:
+  field_age_of_child:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_bank_information:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 9
+    region: content
+  field_birth_date:
+    type: datetime_default
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_book_information:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 16
+    region: content
+  field_current_writing_status:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_employer:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 14
+    region: content
+  field_employment_status:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_family_status:
+    type: list_default
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_grantee_income:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 20
+    region: content
+  field_insurance_company:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_investments:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 13
+    region: content
+  field_life_insurance:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_nom_de_plume:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_other_grant:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 18
+    region: content
+  field_other_income_source:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 17
+    region: content
+  field_partner_income:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_partner_name:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_property_value:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
+  field_reason_applying:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 19
+    region: content
+  field_signed:
+    type: datetime_default
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    weight: 22
+    region: content
+  field_submitted:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 23
+    region: content
+  field_supporting_documents:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 21
+    region: content
+  field_vehicle_information:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 15
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
-hidden: {  }
+hidden:
+  content_moderation_control: true
+  field_amount_awarded: true
+  field_discussion: true
+  field_signature: true

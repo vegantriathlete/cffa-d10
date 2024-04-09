@@ -1,0 +1,43 @@
+uuid: d75d614c-1c87-4620-be3b-b8f9b0b2470e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_discussion
+    - node.type.grant_application
+    - paragraphs.paragraphs_type.discussion
+  module:
+    - entity_reference_revisions
+id: node.grant_application.field_discussion
+field_name: field_discussion
+entity_type: node
+bundle: grant_application
+label: Discussion
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      discussion: discussion
+    negate: 0
+    target_bundles_drag_drop:
+      bank_information:
+        weight: 6
+        enabled: false
+      book_information:
+        weight: 7
+        enabled: false
+      discussion:
+        weight: 8
+        enabled: true
+      other_grant:
+        weight: 9
+        enabled: false
+      vehicle_information:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

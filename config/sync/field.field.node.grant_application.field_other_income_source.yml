@@ -1,0 +1,19 @@
+uuid: 109b8563-e86e-4709-a79b-73538b119578
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_other_income_source
+    - node.type.grant_application
+id: node.grant_application.field_other_income_source
+field_name: field_other_income_source
+entity_type: node
+bundle: grant_application
+label: 'Other Income Sources'
+description: 'Enter the name and the average monthly income from each source. If you do not have any other income sources you may leave this blank.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

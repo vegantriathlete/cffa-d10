@@ -1,0 +1,19 @@
+uuid: aa562d6d-f6fd-4a32-b47b-c650a10fc539
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_partner_name
+    - node.type.grant_application
+id: node.grant_application.field_partner_name
+field_name: field_partner_name
+entity_type: node
+bundle: grant_application
+label: 'Spouse / Domestic Partner Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

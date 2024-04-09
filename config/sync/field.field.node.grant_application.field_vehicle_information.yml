@@ -1,0 +1,43 @@
+uuid: 1333192d-3e6e-4441-8f42-1d06c2230f90
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_vehicle_information
+    - node.type.grant_application
+    - paragraphs.paragraphs_type.vehicle_information
+  module:
+    - entity_reference_revisions
+id: node.grant_application.field_vehicle_information
+field_name: field_vehicle_information
+entity_type: node
+bundle: grant_application
+label: 'Vehicle information'
+description: "Enter the information for each vehicle you own. If you do not own any vehicles, enter \"N/A\" for Make, model and year and leave 0 for the Monthly payment.<br>\r\nYou must specify this prior to submitting your application."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      vehicle_information: vehicle_information
+    negate: 0
+    target_bundles_drag_drop:
+      bank_information:
+        weight: 6
+        enabled: false
+      book_information:
+        weight: 7
+        enabled: false
+      discussion:
+        weight: 8
+        enabled: false
+      other_grant:
+        weight: 9
+        enabled: false
+      vehicle_information:
+        weight: 10
+        enabled: true
+field_type: entity_reference_revisions

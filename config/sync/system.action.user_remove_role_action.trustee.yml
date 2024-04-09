@@ -1,0 +1,14 @@
+uuid: 8e5219aa-016f-4987-8c03-8234160819a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.trustee
+  module:
+    - user
+id: user_remove_role_action.trustee
+label: 'Remove the Trustee role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: trustee

@@ -1,0 +1,30 @@
+uuid: 1a948d94-793a-405c-aaa3-3d0c74baa1f3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_current_writing_status
+field_name: field_current_writing_status
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: underContract
+      label: 'I am currently working on a manuscript for a publisher'
+    -
+      value: noContract
+      label: 'I am currently working on a manuscript without a contract'
+    -
+      value: noManuscript
+      label: 'I am not currently working on a manuscript'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

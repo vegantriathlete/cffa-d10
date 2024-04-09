@@ -1,0 +1,19 @@
+uuid: b4ad7eb5-d40c-4e0a-a1a1-f4764838489a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_investments
+    - node.type.grant_application
+id: node.grant_application.field_investments
+field_name: field_investments
+entity_type: node
+bundle: grant_application
+label: Investments
+description: "Enter the name and value of each investment. If you do not own any investments, enter \"none.\"<br>\r\nYou must specify this prior to submitting your application."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

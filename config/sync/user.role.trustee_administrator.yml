@@ -1,0 +1,9 @@
+uuid: 695ab2d7-2cbf-4f1e-aea1-8c8cb2c3603b
+langcode: en
+status: true
+dependencies: {  }
+id: trustee_administrator
+label: 'Trustee Administrator'
+weight: -6
+is_admin: null
+permissions: {  }

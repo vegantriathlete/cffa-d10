@@ -1,0 +1,14 @@
+uuid: db31fbbb-cc71-41db-b572-70811ed58349
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.trustee_administrator
+  module:
+    - user
+id: user_remove_role_action.trustee_administrator
+label: 'Remove the Trustee Administrator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: trustee_administrator

@@ -1,0 +1,21 @@
+uuid: 56a2f869-0230-41dd-95d8-ac86e399ee83
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_employment_status
+    - node.type.grant_application
+  module:
+    - options
+id: node.grant_application.field_employment_status
+field_name: field_employment_status
+entity_type: node
+bundle: grant_application
+label: 'Other Employment Status'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

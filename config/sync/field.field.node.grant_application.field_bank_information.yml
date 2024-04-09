@@ -1,0 +1,43 @@
+uuid: c2abacff-a861-46ba-a2d6-b9dbee3f8a36
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bank_information
+    - node.type.grant_application
+    - paragraphs.paragraphs_type.bank_information
+  module:
+    - entity_reference_revisions
+id: node.grant_application.field_bank_information
+field_name: field_bank_information
+entity_type: node
+bundle: grant_application
+label: 'Bank Information'
+description: "Enter your account information. If you do not own any accounts, enter \"none\" in each of the account boxes.<br>\r\nYou must specify this prior to submitting your application."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      bank_information: bank_information
+    negate: 0
+    target_bundles_drag_drop:
+      bank_information:
+        weight: 6
+        enabled: true
+      book_information:
+        weight: 7
+        enabled: false
+      discussion:
+        weight: 8
+        enabled: false
+      other_grant:
+        weight: 9
+        enabled: false
+      vehicle_information:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

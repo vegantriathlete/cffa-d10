@@ -1,0 +1,43 @@
+uuid: 4a74ec4e-07c3-4c82-ac57-18de9cbbeaa4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_book_information
+    - node.type.grant_application
+    - paragraphs.paragraphs_type.book_information
+  module:
+    - entity_reference_revisions
+id: node.grant_application.field_book_information
+field_name: field_book_information
+entity_type: node
+bundle: grant_application
+label: 'Published Books'
+description: 'You do not need to list more than five books.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      book_information: book_information
+    negate: 0
+    target_bundles_drag_drop:
+      bank_information:
+        weight: 6
+        enabled: false
+      book_information:
+        weight: 7
+        enabled: true
+      discussion:
+        weight: 8
+        enabled: false
+      other_grant:
+        weight: 9
+        enabled: false
+      vehicle_information:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

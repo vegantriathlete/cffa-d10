@@ -1,0 +1,27 @@
+uuid: 43740137-d408-43bc-b20f-b7073adf5f3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_supporting_documents
+    - node.type.grant_application
+  module:
+    - file
+id: node.grant_application.field_supporting_documents
+field_name: field_supporting_documents
+entity_type: node
+bundle: grant_application
+label: 'Supporting Documents'
+description: "We cannot accept applications without documentation. Please upload relevant files that can help us understand your need for a grant; you may submit a physician's letter, the first two pages of your 1040 (redacted), or other documentation. Do not send books, CVs, reviews, or manuscripts."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: documents
+  file_extensions: 'png pdf jpg'
+  max_filesize: '8 MB'
+  description_field: false
+field_type: file

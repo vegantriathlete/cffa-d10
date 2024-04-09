@@ -1,0 +1,14 @@
+uuid: 6cc181b3-3803-4232-813b-4c1f7f819b1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.trustee
+  module:
+    - user
+id: user_add_role_action.trustee
+label: 'Add the Trustee role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: trustee

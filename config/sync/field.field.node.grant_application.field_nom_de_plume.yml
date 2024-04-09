@@ -1,0 +1,19 @@
+uuid: 2dfa148e-5ff2-43a4-a92f-255f8044682e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_nom_de_plume
+    - node.type.grant_application
+id: node.grant_application.field_nom_de_plume
+field_name: field_nom_de_plume
+entity_type: node
+bundle: grant_application
+label: 'Nom de Plume, if any'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
