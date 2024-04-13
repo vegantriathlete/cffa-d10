@@ -1,0 +1,47 @@
+nav ul.menu li, nav ol.menu li {
+  display: inline;
+  list-style: none;
+  list-style-image: none;
+  padding: 0 0.5em 0 0;
+}
+
+header .menu--account li {
+  border-right: 2px solid #FFFFFF;
+  margin-right: 0.375em;
+}
+
+header .menu--account li:last-of-type {
+  border-right: none;
+  margin-right: 0;
+  padding: 0;
+}
+
+nav ul.menu a.is-active {
+  color: inherit;
+}
+
+nav[role="main-navigation"] {
+  font-size: 1.5em;
+  line-height: 2em;
+}
+
+nav .menu--main {
+  background-color: #C8DEEC;
+  border-bottom: 0.5em solid #C5E0B3;
+}
+
+nav .menu--main ul.menu {
+  margin-block: 0;
+  margin-inline: 0;
+  margin-left: 0.5em;
+}
+
+nav .menu--main ul.menu a {
+  color: #000000;
+  text-decoration: none;
+}
+
+nav .menu--main ul.menu a:hover,
+nav .menu--main ul.menu a:focus {
+  text-decoration: underline;
+}

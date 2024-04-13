@@ -1,0 +1,22 @@
+uuid: b6dfbc41-70fc-42ce-8d5d-b9e06c8254af
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - cffa_claro_subtheme
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: cffa_claro_subtheme_help
+theme: cffa_claro_subtheme
+region: admin
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

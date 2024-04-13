@@ -1,0 +1,22 @@
+uuid: 71f77448-8667-4ee9-a060-d14f5f36e3f3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cffa_claro_subtheme
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: cffa_claro_subtheme_primary_local_tasks
+theme: cffa_claro_subtheme
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

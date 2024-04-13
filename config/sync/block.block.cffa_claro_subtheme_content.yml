@@ -1,0 +1,22 @@
+uuid: 5db8dabc-a44c-4a03-b4bb-f359aa175e69
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cffa_claro_subtheme
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: cffa_claro_subtheme_content
+theme: cffa_claro_subtheme
+region: content
+weight: -2
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

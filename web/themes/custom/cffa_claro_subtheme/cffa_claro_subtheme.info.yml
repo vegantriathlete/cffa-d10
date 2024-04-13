@@ -1,0 +1,15 @@
+name: CFFA (Claro Subtheme)
+type: theme
+base theme: claro
+description: Minor tweaks to the Claro theme.
+package: Custom
+core_version_requirement: ^10
+libraries:
+  - cffa_claro_subtheme/global
+regions:
+  header: 'Header'
+  secondary_menu: 'Secondary menu'
+  primary_menu: 'Primary menu'
+  admin: 'Admin menu'
+  content: 'Content'
+  footer: 'Footer'

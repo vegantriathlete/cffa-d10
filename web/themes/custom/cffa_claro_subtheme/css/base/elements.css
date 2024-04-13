@@ -1,0 +1,40 @@
+html {
+  font-family: Lato, Verdana, Helvetica, Arial, sans-serif;
+}
+
+header {
+  background-color: #1F4E79;
+  color: #FFFFFF;
+  height: 5em;
+  padding: 0.5em;
+}
+
+header a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+header a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.site-name {
+  font-family: Ramaraja, serif;
+  font-size: 3em;
+  letter-spacing: 3px;
+}
+
+.front-page .page-title {
+  display: none;
+}
+
+footer {
+  background-color: #C5E0B3;
+  font-size: 0.75em;
+  line-height: 2em;
+}
+
+footer .block {
+  padding: 0.5em;
+}

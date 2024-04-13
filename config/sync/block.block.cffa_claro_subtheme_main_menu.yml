@@ -1,4 +1,4 @@
-uuid: 9f987053-58f2-42ff-a906-9f7fbd92ae09
+uuid: 62b54868-2dc0-425e-87dc-d970334cc39c
 langcode: en
 status: true
 dependencies:
@@ -7,13 +7,13 @@ dependencies:
   module:
     - system
   theme:
-    - olivero
+    - cffa_claro_subtheme
 _core:
   default_config_hash: KWAiziL39uEzmOJEql_wbUP2RtqGceL3WM2CfxhMelE
-id: olivero_main_menu
-theme: olivero
-region: hero
-weight: -3
+id: cffa_claro_subtheme_main_menu
+theme: cffa_claro_subtheme
+region: primary_menu
+weight: -5
 provider: null
 plugin: 'system_menu_block:main'
 settings:

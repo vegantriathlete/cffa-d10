@@ -1,0 +1,20 @@
+uuid: 66afeb08-dab3-47fc-a69d-3aaf484499b3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cffa_claro_subtheme
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: cffa_claro_subtheme_primary_admin_actions
+theme: cffa_claro_subtheme
+region: admin
+weight: -6
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

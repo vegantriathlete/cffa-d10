@@ -1,0 +1,18 @@
+#register-now {
+  background-color: #1F4E79;
+  border: 2px solid #FF0000;
+  border-radius: 10px;
+  color: #FFFFFF;
+  display: block;
+  float: right;
+  font-size: 2em;
+  padding: 25px;
+}
+
+a#register-now {
+  text-decoration: none;
+}
+
+a:hover#register-now {
+  text-decoration: underline;
+}

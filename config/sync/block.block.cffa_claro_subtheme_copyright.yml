@@ -1,0 +1,25 @@
+uuid: c251d83f-1ae7-4b55-8cac-f1fc0351fd2e
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c783d4a0-3f35-48d2-bb75-2eff67710ce6'
+  module:
+    - block_content
+  theme:
+    - cffa_claro_subtheme
+id: cffa_claro_subtheme_copyright
+theme: cffa_claro_subtheme
+region: footer
+weight: -5
+provider: null
+plugin: 'block_content:c783d4a0-3f35-48d2-bb75-2eff67710ce6'
+settings:
+  id: 'block_content:c783d4a0-3f35-48d2-bb75-2eff67710ce6'
+  label: Copyright
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

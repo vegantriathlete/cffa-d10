@@ -1,0 +1,18 @@
+header .block-system-branding-block {
+  float: left;
+}
+
+header .menu--account {
+  float: right;
+}
+
+nav .menu--main {
+  clear: both;
+}
+
+main .layout-content {
+  padding-left: 20%;
+  padding-top: 5%;
+  padding-right: 20%;
+  padding-bottom: 5%;
+}

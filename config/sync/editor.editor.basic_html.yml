@@ -49,7 +49,7 @@ settings:
         - '<dl>'
         - '<dt>'
         - '<dd>'
-        - '<a hreflang>'
+        - '<a hreflang id>'
         - '<blockquote cite>'
         - '<ul type>'
         - '<ol type>'
