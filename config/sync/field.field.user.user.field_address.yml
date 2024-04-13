@@ -22,6 +22,12 @@ settings:
     US: US
   langcode_override: ''
   field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
     organization:
       override: hidden
     addressLine3:
