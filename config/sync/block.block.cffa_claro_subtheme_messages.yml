@@ -10,7 +10,7 @@ _core:
   default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
 id: cffa_claro_subtheme_messages
 theme: cffa_claro_subtheme
-region: header
+region: admin
 weight: -4
 provider: null
 plugin: system_messages_block

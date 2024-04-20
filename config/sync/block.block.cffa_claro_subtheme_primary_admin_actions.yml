@@ -9,7 +9,7 @@ _core:
 id: cffa_claro_subtheme_primary_admin_actions
 theme: cffa_claro_subtheme
 region: admin
-weight: -6
+weight: -5
 provider: null
 plugin: local_actions_block
 settings:

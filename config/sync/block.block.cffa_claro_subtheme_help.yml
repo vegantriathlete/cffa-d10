@@ -11,7 +11,7 @@ _core:
 id: cffa_claro_subtheme_help
 theme: cffa_claro_subtheme
 region: admin
-weight: -5
+weight: -3
 provider: null
 plugin: help_block
 settings:
