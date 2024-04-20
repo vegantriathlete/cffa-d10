@@ -49,19 +49,45 @@ type_settings:
       published: false
       default_revision: false
   transitions:
+    accepted:
+      label: Accepted
+      from:
+        - under_review
+      to: accepted
+      weight: 5
     create_new_draft:
       label: 'Create New Draft'
       from:
         - draft
-        - published
       to: draft
       weight: 0
-    publish:
-      label: Publish
+    incomplete:
+      label: Incomplete
+      from:
+        - submitted
+        - under_review
+      to: incomplete
+      weight: 2
+    rejected:
+      label: Rejected
+      from:
+        - incomplete
+        - submitted
+        - under_review
+      to: rejected
+      weight: 4
+    review:
+      label: Review
+      from:
+        - incomplete
+        - submitted
+      to: under_review
+      weight: 3
+    submit:
+      label: Submit
       from:
         - draft
-        - published
-      to: published
+      to: submitted
       weight: 1
   entity_types:
     node:
