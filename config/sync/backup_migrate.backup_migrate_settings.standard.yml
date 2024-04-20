@@ -1,0 +1,28 @@
+uuid: b94a410f-d5d8-4c6a-b87e-d6e0690c9b96
+langcode: en
+status: true
+dependencies: {  }
+id: standard
+label: Standard
+config:
+  namer:
+    filename: cffa_backup
+    timestamp: true
+    timestamp_format: Y-m-d\TH-i-s
+  compressor:
+    compression: gzip
+  utils:
+    site_offline: false
+  metadata:
+    description: ''
+  private_files_exclude:
+    exclude_filepaths:
+      - backup_migrate
+  public_files_exclude:
+    exclude_filepaths:
+      - js
+      - css
+      - php
+      - styles
+      - 'config_*'
+      - .htaccess
