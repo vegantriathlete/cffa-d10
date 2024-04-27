@@ -6,6 +6,7 @@ dependencies:
     - node.type.grant_application
   module:
     - content_moderation
+    - field_permissions
     - node
 id: trustee
 label: Trustee
@@ -13,4 +14,49 @@ weight: -7
 is_admin: null
 permissions:
   - 'edit any grant_application content'
+  - 'edit field_discussion'
+  - 'edit own field_comments'
   - 'view any unpublished content'
+  - 'view field_age_of_child'
+  - 'view field_amount_awarded'
+  - 'view field_amount_paid_to_publish'
+  - 'view field_bank_information'
+  - 'view field_bank_web_address'
+  - 'view field_birth_date'
+  - 'view field_book_information'
+  - 'view field_book_name'
+  - 'view field_comment_author'
+  - 'view field_comments'
+  - 'view field_current_writing_status'
+  - 'view field_did_you_receive_an_advance'
+  - 'view field_discussion'
+  - 'view field_employer'
+  - 'view field_employment_status'
+  - 'view field_family_status'
+  - 'view field_grant_amount'
+  - 'view field_grant_organization'
+  - 'view field_grantee_income'
+  - 'view field_how_much_of_an_advance_did'
+  - 'view field_insurance_company'
+  - 'view field_investments'
+  - 'view field_last_statement_amount'
+  - 'view field_life_insurance'
+  - 'view field_make'
+  - 'view field_monthly_car_payment'
+  - 'view field_nom_de_plume'
+  - 'view field_other_grant'
+  - 'view field_other_income_source'
+  - 'view field_partner_income'
+  - 'view field_partner_name'
+  - 'view field_property_value'
+  - 'view field_published_year'
+  - 'view field_publisher'
+  - 'view field_reason_applying'
+  - 'view field_signature'
+  - 'view field_signed'
+  - 'view field_submitted'
+  - 'view field_supporting_documents'
+  - 'view field_type_of_account'
+  - 'view field_vehicle_information'
+  - 'view field_was_your_book_self_publish'
+  - 'view field_year_grant_received'

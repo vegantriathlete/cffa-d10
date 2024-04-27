@@ -3,7 +3,11 @@ langcode: en
 status: true
 dependencies:
   module:
+    - field_permissions
     - paragraphs
+third_party_settings:
+  field_permissions:
+    permission_type: custom
 id: paragraph.field_how_much_of_an_advance_did
 field_name: field_how_much_of_an_advance_did
 entity_type: paragraph
