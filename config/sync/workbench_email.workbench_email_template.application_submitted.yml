@@ -1,0 +1,27 @@
+uuid: f9e711f3-c79e-4a9e-a2b8-cb332810b69b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.trustee_administrator
+    - workflows.workflow.editorial
+id: application_submitted
+label: 'Application submitted'
+format: plain_text
+subject: 'A new application has been submitted at [site:name]'
+recipient_types:
+  role:
+    id: role
+    provider: workbench_email
+    status: true
+    settings:
+      roles:
+        trustee_administrator: trustee_administrator
+bundles: {  }
+body:
+  value: "[current-user:display-name] submitted a grant application. Sign in to the Trustee Admin dashboard and begin the process of reviewing the application at your earliest convenience.\r\n\r\nYou will see the new application in the \"New Applications\" block on your dashboard. Alternatively, you may access the application directly with this link -- [node:edit-url].\r\n\r\nYou will need to decide whether to set the application to \"Under Review\" or \"Incomplete.\""
+  format: plain_text
+replyTo: ''
+transitions:
+  editorial:
+    submit: submit

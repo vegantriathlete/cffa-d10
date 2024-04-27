@@ -1,0 +1,24 @@
+uuid: 102a8485-ff56-43ed-81eb-3178a3c3b20e
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflows.workflow.editorial
+id: application_rejected
+label: 'Application rejected'
+format: plain_text
+subject: 'Your application to [site:name]'
+recipient_types:
+  author:
+    id: author
+    provider: workbench_email
+    status: true
+    settings: {  }
+bundles: {  }
+body:
+  value: "<span style=\"text-align:center;font-size:24px;font-family:Georgia, serif;\">Carnegie Fund for Authors</span>\r\n<span style=\"text-align:center\">Post Office Box 409\r\nLenox Hill Station\r\nNew York, New York 10021</span>\r\n\r\nTRUSTEES\r\nBarbara Magalnick\r\nDaniel Roberts\r\nFred Plotkin\r\n\r\n[node:author:display-name]\r\n[node:author:field_address:address_line1]\r\n[node:author:field_address:locality], [node:author:field_address:administrative_area] [node:author:field_address:postal_code]\r\n\r\n\r\nDear [node:author:field_first_name]:\r\n\r\nAfter a careful review of your application, we have concluded that we cannot offer you a grant. Working within the guidelines under which Carnegie Fund must function, we have concluded that the criteria for receiving a grant have not been met.\r\n\r\nVery truly yours,\r\n\r\nThe Trustees\r\nCarnegie Fund for Authors"
+  format: plain_text
+replyTo: ''
+transitions:
+  editorial:
+    rejected: rejected

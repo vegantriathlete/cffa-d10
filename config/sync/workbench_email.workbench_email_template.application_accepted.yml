@@ -1,0 +1,24 @@
+uuid: de71318e-9058-45c7-bc4e-f2b9959a7e03
+langcode: en
+status: true
+dependencies:
+  config:
+    - workflows.workflow.editorial
+id: application_accepted
+label: 'Application accepted'
+format: plain_text
+subject: '[site:name] - Congratulations! Your grant application has been accepted.'
+recipient_types:
+  author:
+    id: author
+    provider: workbench_email
+    status: true
+    settings: {  }
+bundles: {  }
+body:
+  value: "<span style=\"text-align:center;font-size:24px;font-family:Georgia, serif;\">Carnegie Fund for Authors</span>\r\n<span style=\"text-align:center\">Post Office Box 409\r\nLenox Hill Station\r\nNew York, New York 10021</span>\r\n\r\nTRUSTEES\r\nBarbara Magalnick\r\nMargaret L. Moser\r\nFred Plotkin\r\n\r\n[node:author:display-name]\r\n[node:author:field_address:address_line1]\r\n[node:author:field_address:locality], [node:author:field_address:administrative_area] [node:author:field_address:postal_code]\r\n\r\n\r\nDear [node:author:field_first_name]:\r\n\r\nThe Trustees have reviewed your application for a grant, and I am pleased to advise that we have approved the same to the extent of $[node:field_amount_awarded]. We will be sending you a check to your order in said amount. Please confirm your mailing address as listed at the top of this email.\r\n\r\nKindly acknowledge receipt of the forthcoming check to the undersigned after you receive it.\r\n\r\nVery truly yours,\r\n\r\nBarbara Magalnick\r\nCARNEGIE FUND FOR AUTHORS"
+  format: plain_text
+replyTo: ''
+transitions:
+  editorial:
+    accepted: accepted
