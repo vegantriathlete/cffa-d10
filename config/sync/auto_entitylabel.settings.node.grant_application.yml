@@ -1,0 +1,9 @@
+status: 1
+pattern: "[node:author:field_first_name] [node:author:field_last_name]'s Grant Application - [current-date:custom:m/d/Y]"
+escape: false
+preserve_titles: false
+save: false
+chunk: 50
+dependencies:
+  config:
+    - node.type.grant_application
