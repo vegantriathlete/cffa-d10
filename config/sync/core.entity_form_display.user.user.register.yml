@@ -19,12 +19,17 @@ targetEntityType: user
 bundle: user
 mode: register
 content:
+  account:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   contact:
     weight: 5
     region: content
   field_address:
     type: address_default
-    weight: 2
+    weight: 3
     region: content
     settings:
       wrapper_type: fieldset
@@ -47,16 +52,15 @@ content:
     third_party_settings: {  }
   field_phone:
     type: telephone_default
-    weight: 3
+    weight: 4
     region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
   timezone:
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
-  account: true
   language: true
