@@ -6,6 +6,7 @@ dependencies:
     - workflows.workflow.editorial
   module:
     - content_moderation
+    - node
 id: applicant
 label: Applicant
 weight: -8
@@ -13,3 +14,4 @@ is_admin: null
 permissions:
   - 'use editorial transition create_new_draft'
   - 'use editorial transition submit'
+  - 'view own unpublished content'
