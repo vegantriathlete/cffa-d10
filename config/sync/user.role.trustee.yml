@@ -1,9 +1,12 @@
 uuid: 087b5892-79cf-4812-b9bc-ae5f2600d742
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - content_moderation
 id: trustee
 label: Trustee
 weight: -7
 is_admin: null
-permissions: {  }
+permissions:
+  - 'view any unpublished content'
