@@ -30,6 +30,7 @@
         "drupal/paragraphs": "^1.17",
         "drupal/realname": "^2.0@beta",
         "drupal/token": "^1.13",
+        "drupal/workbench_email": "^3.0",
         "drush/drush": "^12.5"
     },
     "conflict": {
