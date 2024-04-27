@@ -3,14 +3,19 @@ langcode: en
 status: true
 dependencies:
   config:
+    - node.type.grant_application
     - workflows.workflow.editorial
   module:
     - content_moderation
+    - node
 id: trustee_administrator
 label: 'Trustee Administrator'
 weight: -6
 is_admin: null
 permissions:
+  - 'access content overview'
+  - 'delete any grant_application content'
+  - 'edit any grant_application content'
   - 'use editorial transition accepted'
   - 'use editorial transition incomplete'
   - 'use editorial transition rejected'
