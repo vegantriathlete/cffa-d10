@@ -1,0 +1,53 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+
+/**
+ * Implements hook_module_implements_alter().
+ */
+function cffa_module_implements_alter(&$implementations, $hook) {
+	// I don't know why I had needed to run my module after
+	// email_registration and don't know if this is still
+	// necessary.
+  // Note: It doesn't seem that core maintainer have reached a consensus, much
+  //       less an actual solution about setting modules weights. But, it does
+  //       seem that they are pretty determined to kill module_set_weight. So,
+  //       I am using this hook the best I can for right now.
+  // @see: content_translation.module
+  switch ($hook) {
+
+    // Place our hook at the end so that we know it runs after email_registration
+    case 'form_user_registration_form_alter':
+      $group = $implementations['cffa'];
+      unset($implementations['cffa']);
+      $implementations['cffa'] = $group;
+      break;
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function cffa_form_user_register_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (isset($form['field_first_name']) && isset($form['field_last_name'])) {
+    $form['#validate'][] = 'cffa_user_register_form_validate';
+  }
+}
+
+/**
+ * Let's see if we can cut down on some of that robojunk
+ */
+function cffa_user_register_form_validate($form, &$form_state) {
+  $first_name = $form_state->getValue('field_first_name');
+  $last_name = $form_state->getValue('field_last_name');
+
+  if ($first_name == $last_name) {
+	  // This is running, but it is not preventing Drupal from creating the
+	  // account.
+    unset($_GET['destination']);
+    \Drupal::messenger()->addMessage('Thank you for registering.');
+    return new RedirectResponse(Url::fromRoute('<front>', [], ['absolute' => TRUE])->toString());
+  }
+}
