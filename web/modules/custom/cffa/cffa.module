@@ -8,9 +8,9 @@ use Symfony\Component\HttpFoundation\RedirectResponse;
  * Implements hook_module_implements_alter().
  */
 function cffa_module_implements_alter(&$implementations, $hook) {
-	// I don't know why I had needed to run my module after
-	// email_registration and don't know if this is still
-	// necessary.
+  // I don't know why I had needed to run my module after
+  // email_registration and don't know if this is still
+  // necessary.
   // Note: It doesn't seem that core maintainer have reached a consensus, much
   //       less an actual solution about setting modules weights. But, it does
   //       seem that they are pretty determined to kill module_set_weight. So,
@@ -40,14 +40,18 @@ function cffa_form_user_register_form_alter(&$form, FormStateInterface $form_sta
  * Let's see if we can cut down on some of that robojunk
  */
 function cffa_user_register_form_validate($form, &$form_state) {
+  // This isn't accomplishing quite what I'd like to do. It seems
+  // that I can't use the same hack I used in Drupal 7 to just
+  // redirect the form. Setting the response code alone didn't
+  // prevent the account from being created. Setting errorByField
+  // does prevent it, but also provides an error message. I don't
+  // really want to give any information that the account hasn't been
+  // created. (Yes, I know these are most likely all bots and not
+  // human beings.)
   $first_name = $form_state->getValue('field_first_name');
   $last_name = $form_state->getValue('field_last_name');
 
   if ($first_name == $last_name) {
-	  // This is running, but it is not preventing Drupal from creating the
-	  // account.
-    unset($_GET['destination']);
-    \Drupal::messenger()->addMessage('Thank you for registering.');
-    return new RedirectResponse(Url::fromRoute('<front>', [], ['absolute' => TRUE])->toString());
+    $form_state->setRebuild();
   }
 }
