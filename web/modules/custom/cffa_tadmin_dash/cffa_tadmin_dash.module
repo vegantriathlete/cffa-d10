@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Contains procedural logic for the Trustee Dashboard
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function cffa_tadmin_dash_theme() {
+  return [
+    'trustee_admin_dashboard' => [
+      'variables' => [
+        'user_first_name' => '',
+      ],
+    ],
+  ];
+}
