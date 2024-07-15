@@ -1,0 +1,5 @@
+name: CFFA Trustee Dash
+type: module
+description: Provides the Trustee Dashboard
+package: CFFA
+core_version_requirement: ^10

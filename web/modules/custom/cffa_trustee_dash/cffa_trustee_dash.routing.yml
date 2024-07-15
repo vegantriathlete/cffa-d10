@@ -1,0 +1,7 @@
+trustee.dashboard:
+  path: '/cffa/trustee-dash'
+  defaults:
+    _title: 'Trustee Dashboard'
+    _controller: '\Drupal\cffa_trustee_dash\Controller\TrusteeDash::build'
+  requirements:
+    _permission: 'access trustee dash'
