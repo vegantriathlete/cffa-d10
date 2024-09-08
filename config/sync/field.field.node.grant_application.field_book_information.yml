@@ -13,7 +13,7 @@ field_name: field_book_information
 entity_type: node
 bundle: grant_application
 label: 'Published Books'
-description: 'You do not need to list more than five books.'
+description: 'You must list at least one published book. You do not need to list more than five books.'
 required: true
 translatable: false
 default_value: {  }

@@ -75,8 +75,9 @@ third_party_settings:
         classes: ''
         show_empty_fields: false
         id: ''
+        label_as_html: false
         formatter: open
-        description: ''
+        description: 'Note: Every tab has required information. Make sure to fill out all the required fields in each tab before clicking the Save button.'
         required_fields: true
     group_income_information:
       children:
