@@ -54,20 +54,20 @@ type_settings:
       from:
         - under_review
       to: accepted
-      weight: 5
+      weight: 2
     create_new_draft:
       label: 'Create New Draft'
       from:
         - draft
       to: draft
-      weight: 0
+      weight: -4
     incomplete:
       label: Incomplete
       from:
         - submitted
         - under_review
       to: incomplete
-      weight: 2
+      weight: -2
     rejected:
       label: Rejected
       from:
@@ -75,20 +75,26 @@ type_settings:
         - submitted
         - under_review
       to: rejected
-      weight: 4
+      weight: 1
     review:
       label: Review
       from:
         - incomplete
         - submitted
       to: under_review
-      weight: 3
+      weight: -1
+    review_application:
+      label: 'Review application'
+      from:
+        - under_review
+      to: under_review
+      weight: 0
     submit:
       label: Submit
       from:
         - draft
       to: submitted
-      weight: 1
+      weight: -3
   entity_types:
     node:
       - grant_application
