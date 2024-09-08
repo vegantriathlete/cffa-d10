@@ -10,8 +10,8 @@ field_name: field_signature
 entity_type: node
 bundle: grant_application
 label: Signature
-description: "Please type your full name into the box to state you agree with these terms. I attest that all of the information I have provided is correct to the best of my knowledge. I understand that if I have misrepresented any of this information I will automatically be disqualified from receiving this or future grants from the Carnegie Fund for Authors.<br>\r\nYou must specify this prior to submitting your application."
-required: false
+description: 'Please type your full name into the box to state you agree with these terms. I attest that all of the information I have provided is correct to the best of my knowledge. I understand that if I have misrepresented any of this information I will automatically be disqualified from receiving this or future grants from the Carnegie Fund for Authors.'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

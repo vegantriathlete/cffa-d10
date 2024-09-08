@@ -13,8 +13,8 @@ field_name: field_vehicle_information
 entity_type: node
 bundle: grant_application
 label: 'Vehicle information'
-description: "Enter the information for each vehicle you own. If you do not own any vehicles, enter \"N/A\" for Make, model and year and leave 0 for the Monthly payment.<br>\r\nYou must specify this prior to submitting your application."
-required: false
+description: 'Enter the information for each vehicle you own. If you do not own any vehicles, enter "N/A" for Make, model and year and leave 0 for the Monthly payment.'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

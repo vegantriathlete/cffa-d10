@@ -13,8 +13,8 @@ field_name: field_bank_information
 entity_type: node
 bundle: grant_application
 label: 'Bank Information'
-description: "Enter your account information. If you do not own any accounts, enter \"none\" in each of the account boxes.<br>\r\nYou must specify this prior to submitting your application."
-required: false
+description: 'Enter your account information. If you do not own any accounts, enter "none" in each of the account boxes.'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

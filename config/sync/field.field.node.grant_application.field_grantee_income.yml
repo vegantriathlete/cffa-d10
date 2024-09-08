@@ -10,8 +10,8 @@ field_name: field_grantee_income
 entity_type: node
 bundle: grant_application
 label: 'Annual Income'
-description: "Please include Social Security payments and any other pension/retirement payments you received in the past year.<br>\r\nYou must specify this prior to submitting your application."
-required: false
+description: 'Please include Social Security payments and any other pension/retirement payments you received in the past year.'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

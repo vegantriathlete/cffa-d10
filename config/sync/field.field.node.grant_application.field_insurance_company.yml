@@ -10,8 +10,8 @@ field_name: field_insurance_company
 entity_type: node
 bundle: grant_application
 label: 'Health insurance company'
-description: "Provide the name of your health insurance company. If you do not have health insurance, enter \"none.\"<br>\r\nYou must specify this prior to submitting your application."
-required: false
+description: 'Provide the name of your health insurance company. If you do not have health insurance, enter "none."'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

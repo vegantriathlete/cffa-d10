@@ -10,8 +10,8 @@ field_name: field_reason_applying
 entity_type: node
 bundle: grant_application
 label: 'Reason for applying for this grant'
-description: 'You must specify this prior to submitting your application.'
-required: false
+description: ''
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

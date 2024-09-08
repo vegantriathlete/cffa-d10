@@ -14,7 +14,7 @@ entity_type: node
 bundle: grant_application
 label: 'Published Books'
 description: 'You do not need to list more than five books.'
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

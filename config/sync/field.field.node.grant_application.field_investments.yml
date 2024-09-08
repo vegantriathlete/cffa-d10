@@ -10,8 +10,8 @@ field_name: field_investments
 entity_type: node
 bundle: grant_application
 label: Investments
-description: "Enter the name and value of each investment. If you do not own any investments, enter \"none.\"<br>\r\nYou must specify this prior to submitting your application."
-required: false
+description: 'Enter the name and value of each investment. If you do not own any investments, enter "none."'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

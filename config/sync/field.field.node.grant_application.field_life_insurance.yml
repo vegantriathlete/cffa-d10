@@ -10,8 +10,8 @@ field_name: field_life_insurance
 entity_type: node
 bundle: grant_application
 label: 'Life insurance companies and policy amounts'
-description: "Enter policy names and amounts. If you do not have any policies, enter \"none.\"<br>\r\nYou must specify this prior to submitting your application."
-required: false
+description: 'Enter policy names and amounts. If you do not have any policies, enter "none."'
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
