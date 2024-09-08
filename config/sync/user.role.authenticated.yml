@@ -20,3 +20,4 @@ permissions:
   - 'access shortcuts'
   - 'delete own files'
   - 'use text format basic_html'
+  - 'view the administration theme'

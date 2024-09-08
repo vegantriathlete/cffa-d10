@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - node.type.grant_application
+    - workflows.workflow.editorial
   module:
     - cffa_trustee_dash
     - content_moderation
@@ -15,9 +16,11 @@ weight: -7
 is_admin: null
 permissions:
   - 'access trustee dash'
+  - 'create field_discussion'
   - 'edit any grant_application content'
   - 'edit field_discussion'
   - 'edit own field_comments'
+  - 'use editorial transition review_application'
   - 'view any unpublished content'
   - 'view field_age_of_child'
   - 'view field_amount_awarded'
