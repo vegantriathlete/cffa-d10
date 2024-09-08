@@ -1,0 +1,7 @@
+applicant.dashboard:
+  path: '/cffa/app-dash'
+  defaults:
+    _title: 'Applicant Dashboard'
+    _controller: '\Drupal\cffa_app_dash\Controller\ApplicantDash::build'
+  requirements:
+    _permission: 'access applicant dash'

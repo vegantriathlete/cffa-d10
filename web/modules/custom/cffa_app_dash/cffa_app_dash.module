@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @file
+ * Contains procedural logic for the Applicant Dashboard
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function cffa_app_dash_theme() {
+  return [
+    'applicant_dashboard' => [
+      'variables' => [
+        'user_first_name' => '',
+      ],
+    ],
+  ];
+}
