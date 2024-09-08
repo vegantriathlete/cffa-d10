@@ -5,6 +5,7 @@ dependencies:
   config:
     - node.type.grant_application
   module:
+    - cffa_trustee_dash
     - content_moderation
     - field_permissions
     - node
@@ -13,6 +14,7 @@ label: Trustee
 weight: -7
 is_admin: null
 permissions:
+  - 'access trustee dash'
   - 'edit any grant_application content'
   - 'edit field_discussion'
   - 'edit own field_comments'

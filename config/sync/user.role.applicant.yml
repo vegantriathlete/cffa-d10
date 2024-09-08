@@ -6,6 +6,7 @@ dependencies:
     - node.type.grant_application
     - workflows.workflow.editorial
   module:
+    - cffa_app_dash
     - content_moderation
     - field_permissions
     - node
@@ -14,6 +15,7 @@ label: Applicant
 weight: -8
 is_admin: null
 permissions:
+  - 'access applicant dash'
   - 'create field_age_of_child'
   - 'create field_amount_paid_to_publish'
   - 'create field_bank_information'

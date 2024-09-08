@@ -1,11 +1,18 @@
 uuid: 783a6886-3979-442e-b9c8-33967d252343
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - field_permissions
 _core:
   default_config_hash: OeKGIkmZA_c-t6QLH81WNQx8gDCc1MRmxaTuQgxBByU
 id: administrator
 label: Administrator
 weight: -5
 is_admin: true
-permissions: {  }
+permissions:
+  - 'create field_book_information'
+  - 'edit field_book_information'
+  - 'edit own field_book_information'
+  - 'view field_book_information'
+  - 'view own field_book_information'

@@ -6,6 +6,7 @@ dependencies:
     - node.type.grant_application
     - workflows.workflow.editorial
   module:
+    - cffa_tadmin_dash
     - content_moderation
     - field_permissions
     - node
@@ -15,6 +16,7 @@ weight: -6
 is_admin: null
 permissions:
   - 'access content overview'
+  - 'access trustee admin dash'
   - 'delete any grant_application content'
   - 'edit any grant_application content'
   - 'edit field_amount_awarded'
