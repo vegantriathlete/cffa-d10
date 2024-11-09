@@ -7,6 +7,7 @@ dependencies:
     - field.storage.user.field_address
     - field.storage.user.field_phone
     - node.type.grant_application
+    - user.role.administrator
     - user.role.trustee
     - user.role.trustee_administrator
     - workflows.workflow.editorial
@@ -382,6 +383,7 @@ display:
           role:
             trustee: trustee
             trustee_administrator: trustee_administrator
+            administrator: administrator
       empty:
         area:
           id: area
@@ -746,6 +748,7 @@ display:
           role:
             trustee: trustee
             trustee_administrator: trustee_administrator
+            administrator: administrator
       sorts: {  }
       arguments:
         nid:
@@ -929,6 +932,7 @@ display:
           role:
             trustee: trustee
             trustee_administrator: trustee_administrator
+            administrator: administrator
       empty:
         area:
           id: area
@@ -1101,6 +1105,7 @@ display:
           role:
             trustee: trustee
             trustee_administrator: trustee_administrator
+            administrator: administrator
       sorts:
         delta:
           id: delta
@@ -1197,6 +1202,7 @@ display:
         options:
           role:
             trustee_administrator: trustee_administrator
+            administrator: administrator
       empty:
         area:
           id: area
@@ -1756,6 +1762,7 @@ display:
         options:
           role:
             trustee_administrator: trustee_administrator
+            administrator: administrator
       filters:
         type:
           id: type
@@ -1889,6 +1896,7 @@ display:
         options:
           role:
             trustee_administrator: trustee_administrator
+            administrator: administrator
       sorts:
         title:
           id: title
@@ -2040,6 +2048,7 @@ display:
           role:
             trustee: trustee
             trustee_administrator: trustee_administrator
+            administrator: administrator
       empty:
         area:
           id: area
