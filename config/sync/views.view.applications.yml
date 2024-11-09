@@ -1,0 +1,2131 @@
+uuid: 224a04bd-49a9-4e80-bc58-712cdcf93a99
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_discussion
+    - field.storage.user.field_address
+    - field.storage.user.field_phone
+    - node.type.grant_application
+    - user.role.trustee
+    - user.role.trustee_administrator
+    - workflows.workflow.editorial
+  module:
+    - address
+    - content_moderation
+    - entity_reference_revisions
+    - node
+    - realname
+    - telephone
+    - user
+id: applications
+label: Applications
+module: views
+description: ''
+tag: ''
+base_table: node_field_data
+base_field: nid
+display:
+  default:
+    id: default
+    display_title: Default
+    display_plugin: default
+    position: 0
+    display_options:
+      title: 'All Applications'
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: Title
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        delete_node:
+          id: delete_node
+          table: node
+          field: delete_node
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: entity_link_delete
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: delete
+          output_url_as_text: false
+          absolute: false
+        edit_node:
+          id: edit_node
+          table: node
+          field: edit_node
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: entity_link_edit
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: edit
+          output_url_as_text: false
+          absolute: false
+      pager:
+        type: full
+        options:
+          offset: 0
+          pagination_heading_level: h4
+          items_per_page: 10
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Apply
+          reset_button: false
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        created:
+          id: created
+          table: node_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
+      arguments: {  }
+      filters:
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            grant_application: grant_application
+          group: 1
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      style:
+        type: table
+      row:
+        type: fields
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships: {  }
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  accepted_applications_page:
+    id: accepted_applications_page
+    display_title: 'Accepted Applications Page'
+    display_plugin: page
+    position: 5
+    display_options:
+      title: 'Accepted Applications'
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: Title
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      access:
+        type: role
+        options:
+          role:
+            trustee: trustee
+            trustee_administrator: trustee_administrator
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: 'There are no accepted applications at this time.'
+            format: basic_html
+          tokenize: false
+      filters:
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            grant_application: grant_application
+          group: 1
+        moderation_state:
+          id: moderation_state
+          table: node_field_revision
+          field: moderation_state
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: moderation_state_filter
+          operator: in
+          value:
+            editorial-accepted: editorial-accepted
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        empty: false
+        access: false
+        title: false
+        fields: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: applications/accepted
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.roles
+      tags:
+        - 'config:workflow_list'
+  all_applications:
+    id: all_applications
+    display_title: 'All Applications Page'
+    display_plugin: page
+    position: 1
+    display_options:
+      display_description: ''
+      display_extenders: {  }
+      path: applications
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  author_information_block:
+    id: author_information_block
+    display_title: 'Applicant Information Block'
+    display_plugin: block
+    position: 11
+    display_options:
+      title: 'Applicant Information'
+      fields:
+        realname:
+          id: realname
+          table: realname
+          field: realname
+          relationship: uid
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+        field_address:
+          id: field_address
+          table: user__field_address
+          field: field_address
+          relationship: uid
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: langcode
+          type: address_default
+          settings: {  }
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_phone:
+          id: field_phone
+          table: user__field_phone
+          field: field_phone
+          relationship: uid
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: telephone_link
+          settings:
+            title: ''
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        mail:
+          id: mail
+          table: users_field_data
+          field: mail
+          relationship: uid
+          group_type: group
+          admin_label: ''
+          entity_type: user
+          entity_field: mail
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: basic_string
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: none
+        options:
+          offset: 0
+      access:
+        type: role
+        options:
+          role:
+            trustee: trustee
+            trustee_administrator: trustee_administrator
+      sorts: {  }
+      arguments:
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: nid
+          plugin_id: node_nid
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: node
+          default_argument_options: {  }
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          break_phrase: false
+          not: false
+      style:
+        type: default
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+      row:
+        type: fields
+        options: {  }
+      defaults:
+        access: false
+        title: false
+        pager: false
+        style: false
+        row: false
+        relationships: false
+        fields: false
+        sorts: false
+        arguments: false
+      relationships:
+        uid:
+          id: uid
+          table: node_field_data
+          field: uid
+          relationship: none
+          group_type: group
+          admin_label: User
+          entity_type: node
+          entity_field: uid
+          plugin_id: standard
+          required: false
+      display_description: ''
+      display_extenders: {  }
+      block_description: 'Applicant Information'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.roles
+      tags:
+        - 'config:field.storage.user.field_address'
+        - 'config:field.storage.user.field_phone'
+  current_applications_block:
+    id: current_applications_block
+    display_title: 'Current Applications Block'
+    display_plugin: block
+    position: 4
+    display_options:
+      title: 'Current Applications'
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: Title
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: full
+        options:
+          offset: 0
+          pagination_heading_level: h4
+          items_per_page: 5
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      access:
+        type: role
+        options:
+          role:
+            trustee: trustee
+            trustee_administrator: trustee_administrator
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: 'There are currently no applications under review.'
+            format: basic_html
+          tokenize: false
+      filters:
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            grant_application: grant_application
+          group: 1
+        moderation_state:
+          id: moderation_state
+          table: node_field_revision
+          field: moderation_state
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: moderation_state_filter
+          operator: in
+          value:
+            editorial-under_review: editorial-under_review
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        empty: false
+        access: false
+        title: false
+        pager: false
+        fields: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      block_description: 'Current Applications Block'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.roles
+      tags:
+        - 'config:workflow_list'
+  discussion_block:
+    id: discussion_block
+    display_title: 'Trustee Discussion Block'
+    display_plugin: block
+    position: 10
+    display_options:
+      title: Discussion
+      fields:
+        field_discussion:
+          id: field_discussion
+          table: node__field_discussion
+          field: field_discussion
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_revisions_entity_view
+          settings:
+            view_mode: default
+          group_column: ''
+          group_columns: {  }
+          group_rows: false
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: none
+        options:
+          offset: 0
+      access:
+        type: role
+        options:
+          role:
+            trustee: trustee
+            trustee_administrator: trustee_administrator
+      sorts:
+        delta:
+          id: delta
+          table: node__field_discussion
+          field: delta
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+      arguments:
+        nid:
+          id: nid
+          table: node_field_data
+          field: nid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: nid
+          plugin_id: node_nid
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: node
+          default_argument_options: {  }
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          break_phrase: false
+          not: false
+      style:
+        type: html_list
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          type: ul
+          wrapper_class: item-list
+          class: ''
+      row:
+        type: fields
+        options: {  }
+      defaults:
+        access: false
+        title: false
+        pager: false
+        style: false
+        row: false
+        fields: false
+        sorts: false
+        arguments: false
+      display_description: ''
+      display_extenders: {  }
+      block_description: 'Trustee Discussion Block'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.roles
+      tags:
+        - 'config:field.storage.node.field_discussion'
+  incomplete_applications_page:
+    id: incomplete_applications_page
+    display_title: 'Incomplete Applications Page'
+    display_plugin: page
+    position: 6
+    display_options:
+      title: 'Incomplete Applications'
+      access:
+        type: role
+        options:
+          role:
+            trustee_administrator: trustee_administrator
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: 'There are no incomplete applications at this time.'
+            format: basic_html
+          tokenize: false
+      filters:
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            grant_application: grant_application
+          group: 1
+        moderation_state:
+          id: moderation_state
+          table: node_field_revision
+          field: moderation_state
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: moderation_state_filter
+          operator: in
+          value:
+            editorial-incomplete: editorial-incomplete
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        empty: false
+        access: false
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: applications/incomplete
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.roles
+      tags:
+        - 'config:workflow_list'
+  individual_applications:
+    id: individual_applications
+    display_title: "Individual's Applications"
+    display_plugin: page
+    position: 2
+    display_options:
+      title: "Individual's Applications"
+      arguments:
+        revision_uid:
+          id: revision_uid
+          table: node_revision
+          field: revision_uid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: revision_uid
+          plugin_id: entity_target_id
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: current_user
+          default_argument_options: {  }
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: true
+          validate:
+            type: 'entity:user'
+            fail: 'not found'
+          validate_options:
+            access: false
+            operation: view
+            multiple: 0
+            restrict_roles: false
+            roles: {  }
+          break_phrase: false
+          not: false
+      defaults:
+        title: false
+        arguments: false
+      display_description: ''
+      display_extenders: {  }
+      path: applications/%
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  my_applications:
+    id: my_applications
+    display_title: 'My Applications Page'
+    display_plugin: page
+    position: 3
+    display_options:
+      title: 'My Applications'
+      arguments:
+        revision_uid:
+          id: revision_uid
+          table: node_revision
+          field: revision_uid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: revision_uid
+          plugin_id: entity_target_id
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: current_user
+          default_argument_options: {  }
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          break_phrase: false
+          not: false
+      defaults:
+        title: false
+        arguments: false
+      display_description: ''
+      display_extenders: {  }
+      path: my-applications
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  my_applications_block:
+    id: my_applications_block
+    display_title: 'My Applications Block'
+    display_plugin: block
+    position: 8
+    display_options:
+      title: 'My Applications'
+      fields:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: field
+          label: Title
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: false
+            ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: true
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        moderation_state:
+          id: moderation_state
+          table: node_field_data
+          field: moderation_state
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: moderation_state_field
+          label: Status
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: content_moderation_state
+          settings: {  }
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        delete_node:
+          id: delete_node
+          table: node
+          field: delete_node
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: entity_link_delete
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: delete
+          output_url_as_text: false
+          absolute: false
+        edit_node:
+          id: edit_node
+          table: node
+          field: edit_node
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: entity_link_edit
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          text: edit
+          output_url_as_text: false
+          absolute: false
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: 'You have not submitted any applications.'
+            format: basic_html
+          tokenize: false
+      arguments:
+        revision_uid:
+          id: revision_uid
+          table: node_revision
+          field: revision_uid
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: revision_uid
+          plugin_id: entity_target_id
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: All
+          title_enable: false
+          title: ''
+          default_argument_type: current_user
+          default_argument_options: {  }
+          summary_options:
+            base_path: ''
+            count: true
+            override: false
+            items_per_page: 25
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: false
+          validate:
+            type: none
+            fail: 'not found'
+          validate_options: {  }
+          break_phrase: false
+          not: false
+      defaults:
+        empty: false
+        title: false
+        fields: false
+        arguments: false
+      display_description: ''
+      display_extenders: {  }
+      block_description: 'My Applications Block'
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags: {  }
+  new_applications_block:
+    id: new_applications_block
+    display_title: 'New Applications Block'
+    display_plugin: block
+    position: 9
+    display_options:
+      title: 'New Applications'
+      pager:
+        type: full
+        options:
+          offset: 0
+          pagination_heading_level: h4
+          items_per_page: 5
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
+          quantity: 9
+      access:
+        type: role
+        options:
+          role:
+            trustee_administrator: trustee_administrator
+      filters:
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            grant_application: grant_application
+          group: 1
+        moderation_state:
+          id: moderation_state
+          table: node_field_data
+          field: moderation_state
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: moderation_state_filter
+          operator: in
+          value:
+            editorial-submitted: editorial-submitted
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: Title
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              applicant: '0'
+              trustee: '0'
+              trustee_administrator: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        access: false
+        title: false
+        pager: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.roles
+      tags:
+        - 'config:workflow_list'
+  new_applications_page:
+    id: new_applications_page
+    display_title: 'New Applications Page'
+    display_plugin: page
+    position: 12
+    display_options:
+      title: 'New Applications'
+      access:
+        type: role
+        options:
+          role:
+            trustee_administrator: trustee_administrator
+      sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+      filters:
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            grant_application: grant_application
+          group: 1
+        moderation_state:
+          id: moderation_state
+          table: node_field_revision
+          field: moderation_state
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: moderation_state_filter
+          operator: in
+          value:
+            editorial-submitted: editorial-submitted
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: string
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: title_op
+            label: Title
+            description: ''
+            use_operator: false
+            operator: title_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: title
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              applicant: '0'
+              trustee: '0'
+              trustee_administrator: '0'
+              administrator: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        access: false
+        title: false
+        sorts: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: new-applications
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.roles
+      tags:
+        - 'config:workflow_list'
+  rejected_applications_page:
+    id: rejected_applications_page
+    display_title: 'Rejected Applications Page'
+    display_plugin: page
+    position: 7
+    display_options:
+      title: 'Rejected Applications'
+      access:
+        type: role
+        options:
+          role:
+            trustee: trustee
+            trustee_administrator: trustee_administrator
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: true
+          content:
+            value: 'There are no rejected applications at this time.'
+            format: basic_html
+          tokenize: false
+      filters:
+        type:
+          id: type
+          table: node_field_data
+          field: type
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+          value:
+            grant_application: grant_application
+          group: 1
+        moderation_state:
+          id: moderation_state
+          table: node_field_revision
+          field: moderation_state
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          plugin_id: moderation_state_filter
+          operator: in
+          value:
+            editorial-rejected: editorial-rejected
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        empty: false
+        access: false
+        title: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders: {  }
+      path: applications/rejected
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
+        - 'user.node_grants:view'
+        - user.roles
+      tags:
+        - 'config:workflow_list'
