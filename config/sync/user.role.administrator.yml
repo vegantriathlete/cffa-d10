@@ -11,8 +11,8 @@ label: Administrator
 weight: -5
 is_admin: true
 permissions:
-  - 'create field_book_information'
-  - 'edit field_book_information'
-  - 'edit own field_book_information'
-  - 'view field_book_information'
-  - 'view own field_book_information'
+  - 'create field_supporting_documents'
+  - 'edit field_supporting_documents'
+  - 'edit own field_supporting_documents'
+  - 'view field_supporting_documents'
+  - 'view own field_supporting_documents'
