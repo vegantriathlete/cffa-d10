@@ -203,7 +203,7 @@ content:
       closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: _none
+      default_paragraph_type: bank_information
       features:
         add_above: '0'
         collapse_edit_all: collapse_edit_all
@@ -229,7 +229,7 @@ content:
       closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: _none
+      default_paragraph_type: book_information
       features:
         add_above: '0'
         collapse_edit_all: collapse_edit_all
@@ -424,7 +424,7 @@ content:
       closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
-      default_paragraph_type: _none
+      default_paragraph_type: vehicle_information
       features:
         add_above: '0'
         collapse_edit_all: collapse_edit_all
