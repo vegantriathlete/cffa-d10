@@ -1,5 +1,6 @@
 <?php
 
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Url;
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -53,5 +54,14 @@ function cffa_user_register_form_validate($form, &$form_state) {
 
   if ($first_name == $last_name) {
     $form_state->setRebuild();
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function cffa_node_presave(EntityInterface $node) {
+  if ($node->bundle() == 'grant_application' && isset($node->moderation_state) && $node->moderation_state->value == 'submitted') {
+    $node->set('field_submitted', date('F j, Y \a\t g:ia'));
   }
 }
