@@ -7,4 +7,4 @@ chunk: 50
 dependencies:
   config:
     - node.type.grant_application
-new_content_behavior: 1
+new_content_behavior: 0
