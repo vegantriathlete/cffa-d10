@@ -25,6 +25,12 @@
  * @ingroup themeable
  */
 #}
+{% if node_type %}
+  {% set nodeType = node_type %}
+{% else %}
+  {% set nodeType = '' %}
+{% endif %}
+
 <!DOCTYPE html>
 <html{{ html_attributes }}>
   <head>
@@ -35,7 +41,7 @@
     <css-placeholder token="{{ placeholder_token }}">
     <js-placeholder token="{{ placeholder_token }}">
   </head>
-  <body{{ attributes }}>
+  <body{{ attributes.addClass(nodeType) }}>
     {#
       Keyboard navigation/accessibility link to main content section in
       page.html.twig.
