@@ -32,6 +32,7 @@ dependencies:
     - node.type.grant_application
     - workflows.workflow.editorial
   module:
+    - conditional_fields
     - content_moderation
     - datetime
     - field_group
@@ -395,7 +396,26 @@ content:
     weight: 30
     region: content
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      conditional_fields:
+        6d278f97-0744-48ea-8148-41366e6a4d01:
+          entity_type: node
+          bundle: grant_application
+          dependee: moderation_state
+          settings:
+            state: required
+            reset: false
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: submitted
+            effect: show
+            effect_options: {  }
+            selector: ''
   field_submitted:
     type: string_textfield
     weight: 31

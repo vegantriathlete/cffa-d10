@@ -15,6 +15,7 @@ module:
   cffa_tadmin_dash: 0
   cffa_trustee_dash: 0
   ckeditor5: 0
+  conditional_fields: 0
   config: 0
   content_moderation: 0
   contextual: 0
