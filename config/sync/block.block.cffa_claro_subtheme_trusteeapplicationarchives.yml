@@ -12,7 +12,7 @@ dependencies:
 id: cffa_claro_subtheme_trusteeapplicationarchives
 theme: cffa_claro_subtheme
 region: content
-weight: 0
+weight: 1
 provider: null
 plugin: 'block_content:af8043bb-106d-4ccf-9398-b91fe4ee8f1b'
 settings:

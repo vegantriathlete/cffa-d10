@@ -12,7 +12,7 @@ dependencies:
 id: cffa_claro_subtheme__applications_current_applications_block
 theme: cffa_claro_subtheme
 region: content
-weight: 0
+weight: -1
 provider: null
 plugin: 'views_block:applications-current_applications_block'
 settings:

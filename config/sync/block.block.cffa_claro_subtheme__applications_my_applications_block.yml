@@ -1,29 +1,30 @@
-uuid: 3d8af4a5-24dd-4afa-896f-f7c412f78dc0
+uuid: 05827267-7765-4938-932f-c910417a5bb9
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.users
+    - views.view.applications
   module:
     - system
     - views
   theme:
     - cffa_claro_subtheme
-id: cffa_claro_subtheme_views_block__users_block_1
+id: cffa_claro_subtheme__applications_my_applications_block
 theme: cffa_claro_subtheme
 region: content
-weight: 2
+weight: -2
 provider: null
-plugin: 'views_block:users-block_1'
+plugin: 'views_block:applications-my_applications_block'
 settings:
-  id: 'views_block:users-block_1'
+  id: 'views_block:applications-my_applications_block'
   label: ''
   label_display: visible
   provider: views
+  context_mapping: {  }
   views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: /cffa/tadmin-dash
+    pages: /cffa/app-dash

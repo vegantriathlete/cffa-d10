@@ -1,0 +1,30 @@
+uuid: 02a11b1c-672b-4374-9475-9c197018f2dd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:34ca9e84-974e-432f-b8b2-241fd058d62b'
+  module:
+    - block_content
+    - system
+  theme:
+    - cffa_claro_subtheme
+id: cffa_claro_subtheme_linkstodownloadpages
+theme: cffa_claro_subtheme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:34ca9e84-974e-432f-b8b2-241fd058d62b'
+settings:
+  id: 'block_content:34ca9e84-974e-432f-b8b2-241fd058d62b'
+  label: 'Links to download pages'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /cffa/app-dash
