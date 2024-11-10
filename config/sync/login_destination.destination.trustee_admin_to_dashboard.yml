@@ -1,0 +1,16 @@
+uuid: 88fd5142-ce25-4a32-bd46-7dd2b6ada01b
+langcode: en
+status: true
+dependencies: {  }
+name: trustee_admin_to_dashboard
+label: 'Trustee Admin to Dashboard'
+triggers:
+  login: login
+destination_path: 'internal:/cffa/tadmin-dash'
+pages_type: 0
+pages: ''
+language: ''
+roles:
+  trustee_administrator: trustee_administrator
+weight: 0
+enabled: true
