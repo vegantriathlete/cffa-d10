@@ -11,7 +11,7 @@ entity_type: paragraph
 bundle: bank_information
 label: 'Bank Name and Type of Account'
 description: 'Type of account could be checking, savings, money market, etc.'
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

@@ -11,7 +11,7 @@ entity_type: paragraph
 bundle: vehicle_information
 label: 'Vehicle Make, Model & Year'
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
