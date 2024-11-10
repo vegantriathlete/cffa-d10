@@ -17,6 +17,7 @@ is_admin: null
 permissions:
   - 'access content overview'
   - 'access trustee admin dash'
+  - 'create field_comments'
   - 'create field_discussion'
   - 'delete any grant_application content'
   - 'edit any grant_application content'

@@ -16,6 +16,7 @@ weight: -7
 is_admin: null
 permissions:
   - 'access trustee dash'
+  - 'create field_comments'
   - 'create field_discussion'
   - 'edit any grant_application content'
   - 'edit field_discussion'

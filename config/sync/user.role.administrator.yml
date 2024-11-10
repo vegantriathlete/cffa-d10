@@ -11,8 +11,8 @@ label: Administrator
 weight: -5
 is_admin: true
 permissions:
-  - 'create field_supporting_documents'
-  - 'edit field_supporting_documents'
-  - 'edit own field_supporting_documents'
-  - 'view field_supporting_documents'
-  - 'view own field_supporting_documents'
+  - 'create field_comments'
+  - 'edit field_comments'
+  - 'edit own field_comments'
+  - 'view field_comments'
+  - 'view own field_comments'
