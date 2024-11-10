@@ -12,7 +12,7 @@ field_name: field_signed
 entity_type: node
 bundle: grant_application
 label: 'Date Signed'
-description: ''
+description: 'This field is required when you submit the application.'
 required: false
 translatable: false
 default_value: {  }
