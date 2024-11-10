@@ -11,8 +11,8 @@ label: Administrator
 weight: -5
 is_admin: true
 permissions:
-  - 'create field_comments'
-  - 'edit field_comments'
-  - 'edit own field_comments'
-  - 'view field_comments'
-  - 'view own field_comments'
+  - 'create field_signed'
+  - 'edit field_signed'
+  - 'edit own field_signed'
+  - 'view field_signed'
+  - 'view own field_signed'
