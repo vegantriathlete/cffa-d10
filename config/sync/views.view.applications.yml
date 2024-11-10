@@ -239,9 +239,12 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: perm
+        type: role
         options:
-          perm: 'access content'
+          role:
+            trustee: trustee
+            trustee_administrator: trustee_administrator
+            administrator: administrator
       cache:
         type: tag
         options: {  }
@@ -302,7 +305,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags: {  }
   accepted_applications_page:
     id: accepted_applications_page
@@ -490,7 +493,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags: {  }
   author_information_block:
     id: author_information_block
@@ -1355,7 +1358,7 @@ display:
         - url.query_args
         - user
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags: {  }
   my_applications:
     id: my_applications
@@ -1415,7 +1418,7 @@ display:
         - url.query_args
         - user
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags: {  }
   my_applications_block:
     id: my_applications_block
@@ -1726,7 +1729,7 @@ display:
         - url.query_args
         - user
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags: {  }
   new_applications_block:
     id: new_applications_block
