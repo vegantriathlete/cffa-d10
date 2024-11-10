@@ -1,0 +1,30 @@
+uuid: 99bec8ee-f839-4499-b604-abdf7d2d4a00
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:af8043bb-106d-4ccf-9398-b91fe4ee8f1b'
+  module:
+    - block_content
+    - system
+  theme:
+    - cffa_claro_subtheme
+id: cffa_claro_subtheme_trusteeapplicationarchives
+theme: cffa_claro_subtheme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:af8043bb-106d-4ccf-9398-b91fe4ee8f1b'
+settings:
+  id: 'block_content:af8043bb-106d-4ccf-9398-b91fe4ee8f1b'
+  label: 'Trustee Application Archives'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /cffa/trustee-dash

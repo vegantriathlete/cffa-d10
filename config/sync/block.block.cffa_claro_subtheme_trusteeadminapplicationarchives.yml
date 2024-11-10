@@ -1,0 +1,30 @@
+uuid: 389b7495-bbe3-4519-8023-55b99f2a7eb4
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:de2e9587-70c1-42d7-bda8-316adbfa4f0c'
+  module:
+    - block_content
+    - system
+  theme:
+    - cffa_claro_subtheme
+id: cffa_claro_subtheme_trusteeadminapplicationarchives
+theme: cffa_claro_subtheme
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:de2e9587-70c1-42d7-bda8-316adbfa4f0c'
+settings:
+  id: 'block_content:de2e9587-70c1-42d7-bda8-316adbfa4f0c'
+  label: 'Trustee Admin Application Archives'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /cffa/tadmin-dash
