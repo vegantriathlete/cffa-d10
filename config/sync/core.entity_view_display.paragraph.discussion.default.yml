@@ -11,19 +11,12 @@ targetEntityType: paragraph
 bundle: discussion
 mode: default
 content:
-  field_comment_author:
-    type: string
-    label: above
-    settings:
-      link_to_entity: false
+  field_comments:
+    type: basic_string
+    label: hidden
+    settings: {  }
     third_party_settings: {  }
     weight: 0
     region: content
-  field_comments:
-    type: basic_string
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 1
-    region: content
-hidden: {  }
+hidden:
+  field_comment_author: true
