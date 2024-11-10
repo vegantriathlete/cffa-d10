@@ -3,9 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_attachment
     - field.field.node.page.field_body
     - node.type.page
   module:
+    - file
     - text
     - user
 _core:
@@ -15,6 +17,14 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
+  field_attachment:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
   field_body:
     type: text_default
     label: hidden
