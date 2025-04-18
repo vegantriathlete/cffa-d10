@@ -3,7 +3,7 @@ type: theme
 base theme: claro
 description: Minor tweaks to the Claro theme.
 package: Custom
-core_version_requirement: ^10
+core_version_requirement: ^10 || ^11
 libraries:
   - cffa_claro_subtheme/global
 regions:
