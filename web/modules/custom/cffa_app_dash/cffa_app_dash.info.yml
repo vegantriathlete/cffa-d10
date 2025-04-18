@@ -2,4 +2,4 @@ name: CFFA Applicant Dash
 type: module
 description: Provides the Applicant Dashboard
 package: CFFA
-core_version_requirement: ^10
+core_version_requirement: ^10 || ^11

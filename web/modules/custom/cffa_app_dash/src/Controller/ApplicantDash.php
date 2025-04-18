@@ -55,6 +55,8 @@ class ApplicantDash extends ControllerBase {
 
     $user = User::load($this->userService->id());
     $build['#user_first_name'] = $user->get('field_first_name')->value;
+    // @todo: Check account access to create grant_application
+    //$build['#create_access'] = FALSE;
     $build['#cache']['tags'] = [
       'user:' . $this->userService->id(),
     ];

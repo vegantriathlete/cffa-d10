@@ -2,4 +2,4 @@ name: CFFA
 type: module
 description: Global module to handle "glue" and utility functions
 package: CFFA
-core_version_requirement: ^10
+core_version_requirement: ^10 || ^11

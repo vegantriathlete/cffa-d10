@@ -13,6 +13,7 @@ function cffa_app_dash_theme() {
     'applicant_dashboard' => [
       'variables' => [
         'user_first_name' => '',
+        'create_access' => TRUE,
       ],
     ],
   ];

@@ -1,3 +1,5 @@
 <h2>Welcome, {{ user_first_name }}.</h2>
 
-<div><a href="/node/add/grant_application">Create a Grant Application</a></div>
+{% if create_access %}
+  <div><a href="/node/add/grant_application">Create a Grant Application</a></div>
+{% endif %}
