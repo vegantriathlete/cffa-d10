@@ -14,8 +14,6 @@ services:
             - type: bind
               source: /Sites/cffa
               target: /Sites/cffa
-        ports:
-            - 5432:5432
         image: postgres:alpine3.19
     php-fpm:
         container_name: php-fpm-server
@@ -23,8 +21,6 @@ services:
             - ./secrets.env
         networks:
             - cffanetwork
-        ports:
-            - 9000:9000
         volumes:
             - type: bind
               source: /Sites/cffa
